@@ -19,5 +19,11 @@ describe('isArrayLike', () => {
     expect(isArrayLike([])).to.be.true;
 
     expect(isArrayLike({ length: 1 })).to.be.true;
+    expect(isArrayLike({ length: 0 })).to.be.true;
+  });
+
+  it('Should return false with invalid lengths', () => {
+    expect(isArrayLike({ length: null })).to.be.false;
+    expect(isArrayLike({ length: -1 })).to.be.false;
   })
 });
