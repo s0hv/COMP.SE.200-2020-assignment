@@ -1,0 +1,15 @@
+{
+  "report-dir": "./coverage",
+  "reporter": ["text", "lcov"],
+  "exclude": [
+    "**/*.test.js",
+    "**/.coverage",
+    "**/node_modules",
+    "**/test",
+    "**/.mocharc.cjs",
+    "**/setupTests.mjs",
+    "**/.internal/*"
+  ],
+  "src": "src",
+  "all": true
+}

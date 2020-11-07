@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "mocha",
-    "test:ci": "npm run coverage && coveralls < coverage/lcov.info",
-    "coverage": "c8  --reporter lcov --src src --all -x **/.internal/** npm run test",
-    "coverage:report": "c8 report --src src --all -x **/.internal/**"
+    "test:ci": "npm run coverage && coveralls < ./coverage/lcov.info",
+    "coverage": "c8 npm run test",
+    "coverage:report": "c8 report"
   },
   "author": "",
   "license": "MIT",
