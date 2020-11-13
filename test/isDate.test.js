@@ -6,7 +6,7 @@ describe('isDate', () => {
         expect(isDate(new Date(123))).to.be.true;
     });
 
-    it('Should return false with non booleans', () => {
+    it('Should return false with non Dates', () => {
         expect(isDate('not date')).to.be.false;
         expect(isDate(123)).to.be.false;
     });
