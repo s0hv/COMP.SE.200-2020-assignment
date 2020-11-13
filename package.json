@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --parallel",
     "test:ci": "npm run coverage && coveralls < ./coverage/lcov.info",
     "coverage": "c8 npm run test",
     "coverage:report": "c8 report"
