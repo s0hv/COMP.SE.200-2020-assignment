@@ -1,3 +1,5 @@
 module.exports = {
-    require: ['setupTests.mjs']
+    reporter: 'mochawesome',
+    parallel: true,
+    require: ['setupTests.mjs'],
 }
