@@ -1,4 +1,4 @@
 module.exports = {
     reporter: 'mochawesome',
-    require: ['setupTests.mjs'],
+    require: ['setupTests.mjs', 'mochawesome/register'],
 }
