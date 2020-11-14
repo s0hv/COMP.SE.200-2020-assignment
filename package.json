@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "mocha",
-    "test:ci": "npm run coverage && coveralls < ./coverage/lcov.info",
+    "test:ci": "npm run coverage",
+    "coverage:ci": "coveralls < ./coverage/lcov.info",
     "coverage": "c8 npm run test",
     "coverage:report": "c8 report"
   },
