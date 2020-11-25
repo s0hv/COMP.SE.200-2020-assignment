@@ -1,6 +1,6 @@
 import clamp from "../src/clamp.js";
 
-describe('chunk', () => {
+describe('clamp', () => {
     it('Should return the clamp number',()=>{
        expect(clamp(-10, -5, 5)).to.equal(-5);
        expect(clamp(10, -5, 5)).to.equal(-5);
