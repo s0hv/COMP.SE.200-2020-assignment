@@ -1,6 +1,6 @@
 import drop from "../src/drop.js";
 
-describe('dropArrayTest', () => {
+describe('drop', () => {
     it('should return slice of `array` with `n` elements dropped from the beginning',()=>{
       expect(drop([1, 2, 3])).to.deep.equal([2, 3]);
       expect(drop([1, 2, 3], 2)).to.deep.equal([3]);

@@ -1,6 +1,6 @@
 import endsWith from "../src/endsWith.js";
 
-describe('endsWithArray', () => {
+describe('endsWith', () => {
     it('Should return true if `string` ends with `target`',()=>{
       expect(endsWith('abc','c')).to.be.true;
       expect(endsWith('abc','b')).to.be.false
